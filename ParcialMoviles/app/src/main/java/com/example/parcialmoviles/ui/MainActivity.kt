@@ -1,7 +1,8 @@
-package com.example.parcialmoviles
+package com.example.parcialmoviles.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.parcialmoviles.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

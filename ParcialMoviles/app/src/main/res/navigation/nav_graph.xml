@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/catalogFragment"
-        android:name="com.example.parcialmoviles.CatalogFragment"
+        android:name="com.example.parcialmoviles.ui.monument.catalog.CatalogFragment"
         android:label="fragment_catalog"
         tools:layout="@layout/fragment_catalog" >
         <action
@@ -19,12 +19,12 @@
     </fragment>
     <fragment
         android:id="@+id/monumentFragment"
-        android:name="com.example.parcialmoviles.MonumentFragment"
+        android:name="com.example.parcialmoviles.ui.monument.MonumentFragment"
         android:label="fragment_monument"
         tools:layout="@layout/fragment_monument" />
     <fragment
         android:id="@+id/newMonumentFragment"
-        android:name="com.example.parcialmoviles.NewMonumentFragment"
+        android:name="com.example.parcialmoviles.ui.monument.newmonument.NewMonumentFragment"
         android:label="fragment_new_monument"
         tools:layout="@layout/fragment_new_monument" />
 </navigation>
