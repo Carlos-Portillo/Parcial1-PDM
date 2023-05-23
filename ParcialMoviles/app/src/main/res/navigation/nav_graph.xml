@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/catalogFragment">
+
+    <fragment
+        android:id="@+id/catalogFragment"
+        android:name="com.example.parcialmoviles.CatalogFragment"
+        android:label="fragment_catalog"
+        tools:layout="@layout/fragment_catalog" >
+        <action
+            android:id="@+id/action_catalogFragment_to_monumentFragment"
+            app:destination="@id/monumentFragment" />
+        <action
+            android:id="@+id/action_catalogFragment_to_newMonumentFragment"
+            app:destination="@id/newMonumentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/monumentFragment"
+        android:name="com.example.parcialmoviles.MonumentFragment"
+        android:label="fragment_monument"
+        tools:layout="@layout/fragment_monument" />
+    <fragment
+        android:id="@+id/newMonumentFragment"
+        android:name="com.example.parcialmoviles.NewMonumentFragment"
+        android:label="fragment_new_monument"
+        tools:layout="@layout/fragment_new_monument" />
+</navigation>
