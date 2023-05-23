@@ -24,7 +24,7 @@
             android:layout_marginTop="@dimen/mid_gap"
             android:text="@={viewmodel.name}"
             android:textColor="@color/white"
-            android:textSize="@dimen/title_size"
+            android:textSize="40sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -34,7 +34,7 @@
             style="@style/TextAppearance.AppCompat.Title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/mid_gap"
+            android:layout_marginStart="@dimen/small_gap"
             android:text="@={viewmodel.ubication}"
             android:textColor="@color/white"
             android:textSize="@dimen/text_size"

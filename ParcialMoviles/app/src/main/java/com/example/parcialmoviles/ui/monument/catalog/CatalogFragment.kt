@@ -36,7 +36,7 @@ class CatalogFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //setRecyclerView(view)
+        setRecyclerView(view)
 
         binding.floatingActionButton.setOnClickListener {
             monumentViewModel.clearData()
@@ -54,7 +54,7 @@ class CatalogFragment : Fragment() {
         adapter.notifyDataSetChanged()
     }
 
-    /*private fun setRecyclerView(view: View) {
+    private fun setRecyclerView(view: View) {
         binding.recyclerView.layoutManager = LinearLayoutManager(view.context)
 
         adapter = MonumentRecyclerViewAdapter {selectedMonument ->
@@ -63,6 +63,6 @@ class CatalogFragment : Fragment() {
 
         binding.recyclerView.adapter = adapter
         displayComputers()
-    }*/
+    }
 
 }
