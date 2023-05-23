@@ -50,6 +50,11 @@ class MonumentViewModel(private val repository: MonumentRepository): ViewModel()
         status.value = INACTIVE
     }
 
+    fun setSelectedMonument(monument: MonumentModel) {
+        name.value = monument.name
+        ubication.value = monument.ubication
+    }
+
     companion object{
         val Factory = viewModelFactory {
             initializer {
